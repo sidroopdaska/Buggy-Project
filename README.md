@@ -11,12 +11,11 @@ Data on the characteristics of each target was to be presented on a PC using GUI
 location of buggy in the arena.
 
 The Arduino firmware contains code for -
-1)motor control using automatic positive feedback from the sensors to control buggy movement 
-2)to decode the DTMF data in the form of an ASCII string to be used to provide coordinates of the targets and 
-obstacles for determining the optimal path.
-3)code for using relays and digital data received from the numerous GPIO pins for determing electrical characteristcs
-of various targets on the chequered arena.
+1)Motor control using automatic positive feedback from the sensors to control buggy movement 
+2)Decoding the DTMF data on the coordinates of targets and obstacles into an ASCII string.
+3)Using relays and obtaining inputs from numerous GPIO pins for determing electrical characteristcs of various targets on the chequered arena.
 
-The Java code involves setting up a GUI to display the above computed information, communication with the arduino to receive
-decoded DTMF values, determining the optimal path using a route finding algorithm and issuing commands to achieve the 
-required movement to reach targets in minimalistic time whilst avoiding obstacles
+The Java code involves-
+1)setting up a GUI to display the above computed information
+2)communication with the arduino to receive decoded DTMF ASCII String and determining the optimal path using a route finding algorithm 
+3)issuing commands to achieve the required movement to reach targets in minimalistic time whilst avoiding obstacles
